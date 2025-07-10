@@ -2,7 +2,7 @@ import { Button } from "@/components/ui/button";
 
 const HeroSection = () => {
   return (
-    <section className="relative bg-gradient-to-br from-wood-light to-wood-warm py-20">
+    <section className="relative bg-gradient-to-br from-wood-light to-wood-warm py-20 pt-32">
       <div className="absolute inset-0 bg-black/20"></div>
       <div
         className="absolute inset-0 bg-cover bg-center opacity-30"
