@@ -33,9 +33,9 @@ const Header = () => {
                 className="text-primary group-hover:text-primary/80 transition-all duration-300 transform group-hover:scale-110"
                 size={36}
               />
-              <div className="absolute -top-1 -right-1 w-3 h-3 bg-green-500 rounded-full animate-pulse"></div>
+              <div className="absolute -top-1 -right-1 w-3 h-3 bg-vibrant-yellow rounded-full animate-pulse"></div>
             </div>
-            <span className="text-2xl font-bold bg-gradient-to-r from-primary to-wood-medium bg-clip-text text-transparent">
+            <span className="text-2xl font-bold text-foreground">
               СрубМастер
             </span>
           </div>
@@ -59,7 +59,7 @@ const Header = () => {
           {/* CTA Button */}
           <div className="hidden md:flex items-center space-x-4">
             <Button
-              className="bg-gradient-to-r from-primary to-wood-medium hover:from-primary/90 hover:to-wood-medium/90 transform hover:scale-105 transition-all duration-300 shadow-lg hover:shadow-xl"
+              className="bg-primary hover:bg-primary/90 text-primary-foreground transform hover:scale-105 transition-all duration-300 shadow-lg hover:shadow-xl"
               size="lg"
             >
               <Icon name="Phone" className="mr-2" size={18} />
@@ -91,7 +91,7 @@ const Header = () => {
                   {item.label}
                 </a>
               ))}
-              <Button className="mt-4 w-full bg-gradient-to-r from-primary to-wood-medium">
+              <Button className="mt-4 w-full bg-primary text-primary-foreground">
                 <Icon name="Phone" className="mr-2" size={18} />
                 Заказать консультацию
               </Button>

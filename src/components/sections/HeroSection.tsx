@@ -15,20 +15,20 @@ const HeroSection = () => {
     <section className="relative h-screen flex items-center justify-center overflow-hidden">
       {/* Parallax Background */}
       <div
-        className="absolute inset-0 bg-cover bg-center bg-no-repeat transform scale-105"
+        className="absolute inset-0 bg-cover bg-center bg-no-repeat transform scale-105 brightness-125"
         style={{
           backgroundImage: `url('/img/60e0bc6c-28e7-4e47-b39d-b4539fd6eb4a.jpg')`,
           transform: `translateY(${scrollY * 0.5}px) scale(1.05)`,
         }}
       />
 
-      {/* Gradient Overlay */}
-      <div className="absolute inset-0 bg-gradient-to-r from-black/60 via-black/40 to-transparent" />
+      {/* Light Overlay */}
+      <div className="absolute inset-0 bg-black/30" />
 
       {/* Decorative Elements */}
-      <div className="absolute top-20 left-10 w-32 h-32 bg-vibrant-green/20 rounded-full blur-3xl animate-pulse" />
+      <div className="absolute top-20 left-10 w-32 h-32 bg-vibrant-yellow/20 rounded-full blur-3xl animate-pulse" />
       <div
-        className="absolute bottom-20 right-10 w-40 h-40 bg-vibrant-orange/20 rounded-full blur-3xl animate-pulse"
+        className="absolute bottom-20 right-10 w-40 h-40 bg-vibrant-amber/20 rounded-full blur-3xl animate-pulse"
         style={{ animationDelay: "1s" }}
       />
 
@@ -36,8 +36,8 @@ const HeroSection = () => {
       <div className="relative z-10 container mx-auto px-4">
         <div className="max-w-4xl mx-auto text-center text-white">
           {/* Badge */}
-          <div className="inline-flex items-center gap-2 bg-vibrant-green/20 backdrop-blur-sm border border-vibrant-green/30 rounded-full px-6 py-3 mb-8 animate-fade-in">
-            <Icon name="Leaf" className="text-vibrant-green" size={20} />
+          <div className="inline-flex items-center gap-2 bg-vibrant-yellow/20 backdrop-blur-sm border border-vibrant-yellow/40 rounded-full px-6 py-3 mb-8 animate-fade-in">
+            <Icon name="Leaf" className="text-vibrant-yellow" size={20} />
             <span className="text-sm font-medium">
               Экологичное строительство с 2010 года
             </span>
@@ -45,12 +45,10 @@ const HeroSection = () => {
 
           {/* Main Title */}
           <h1 className="text-5xl md:text-7xl lg:text-8xl font-bold mb-6 leading-tight">
-            <span className="bg-gradient-to-r from-white via-white to-vibrant-green bg-clip-text text-transparent animate-fade-in">
-              Срубы из
-            </span>
+            <span className="text-white animate-fade-in">Срубы из</span>
             <br />
             <span
-              className="bg-gradient-to-r from-vibrant-green to-vibrant-orange bg-clip-text text-transparent animate-fade-in"
+              className="text-vibrant-yellow animate-fade-in"
               style={{ animationDelay: "0.2s" }}
             >
               натурального дерева
@@ -73,7 +71,7 @@ const HeroSection = () => {
             <div className="bg-white/10 backdrop-blur-sm rounded-xl p-6 border border-white/20">
               <Icon
                 name="Home"
-                className="text-vibrant-green mb-4 mx-auto"
+                className="text-vibrant-yellow mb-4 mx-auto"
                 size={32}
               />
               <h3 className="text-lg font-semibold mb-2">Дома</h3>
@@ -82,7 +80,7 @@ const HeroSection = () => {
             <div className="bg-white/10 backdrop-blur-sm rounded-xl p-6 border border-white/20">
               <Icon
                 name="Waves"
-                className="text-vibrant-orange mb-4 mx-auto"
+                className="text-vibrant-yellow mb-4 mx-auto"
                 size={32}
               />
               <h3 className="text-lg font-semibold mb-2">Бани</h3>
@@ -91,7 +89,7 @@ const HeroSection = () => {
             <div className="bg-white/10 backdrop-blur-sm rounded-xl p-6 border border-white/20">
               <Icon
                 name="Trees"
-                className="text-vibrant-green mb-4 mx-auto"
+                className="text-vibrant-yellow mb-4 mx-auto"
                 size={32}
               />
               <h3 className="text-lg font-semibold mb-2">Беседки</h3>
@@ -106,7 +104,7 @@ const HeroSection = () => {
           >
             <Button
               size="lg"
-              className="bg-gradient-to-r from-vibrant-green to-vibrant-emerald hover:from-vibrant-green/90 hover:to-vibrant-emerald/90 transform hover:scale-105 transition-all duration-300 shadow-2xl text-lg px-8 py-6"
+              className="bg-vibrant-yellow hover:bg-vibrant-yellow/90 text-black transform hover:scale-105 transition-all duration-300 shadow-2xl text-lg px-8 py-6"
             >
               <Icon name="Eye" className="mr-2" size={20} />
               Смотреть каталог
@@ -132,8 +130,8 @@ const HeroSection = () => {
 
       {/* Floating Elements */}
       <div className="absolute top-1/4 left-20 animate-float">
-        <div className="w-16 h-16 bg-vibrant-green/10 rounded-full backdrop-blur-sm border border-vibrant-green/30 flex items-center justify-center">
-          <Icon name="TreePine" className="text-vibrant-green" size={24} />
+        <div className="w-16 h-16 bg-vibrant-yellow/10 rounded-full backdrop-blur-sm border border-vibrant-yellow/30 flex items-center justify-center">
+          <Icon name="TreePine" className="text-vibrant-yellow" size={24} />
         </div>
       </div>
 
@@ -141,8 +139,8 @@ const HeroSection = () => {
         className="absolute top-1/3 right-20 animate-float"
         style={{ animationDelay: "2s" }}
       >
-        <div className="w-12 h-12 bg-vibrant-orange/10 rounded-full backdrop-blur-sm border border-vibrant-orange/30 flex items-center justify-center">
-          <Icon name="Hammer" className="text-vibrant-orange" size={16} />
+        <div className="w-12 h-12 bg-vibrant-yellow/10 rounded-full backdrop-blur-sm border border-vibrant-yellow/30 flex items-center justify-center">
+          <Icon name="Hammer" className="text-vibrant-yellow" size={16} />
         </div>
       </div>
     </section>

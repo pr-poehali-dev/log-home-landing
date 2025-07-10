@@ -71,10 +71,9 @@ export default {
           beige: "#F5F5DC",
         },
         vibrant: {
-          green: "#16A34A",
-          emerald: "#10B981",
-          orange: "#F97316",
+          yellow: "#F59E0B",
           amber: "#F59E0B",
+          orange: "#F97316",
           red: "#EF4444",
           blue: "#3B82F6",
           purple: "#A855F7",
